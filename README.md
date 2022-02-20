@@ -1,4 +1,4 @@
-# Build a bullet proof REST API with Typescript, Express.js and Sequelize with Sqlite3 |CRUD REST API
+# Simple REST API for Todo App
 
 Tutorial by [Daily Web Coding](https://www.youtube.com/watch?v=yFgrSJGNj0E&t=102s&ab_channel=DailyWebCoding)
 
@@ -10,7 +10,7 @@ npm install
 
 ## Configuration
 
-Create .env file in root folder and add db config params (use .env.sample as template).
+Create .env file based on .env.sample and modify values depending on your needs.
 
 ## Usage
 
