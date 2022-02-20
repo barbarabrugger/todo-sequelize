@@ -1,15 +1,12 @@
-import {Request, Response, NextFunction} from "express";
-import {validationResult} from "express-validator";
+import { validationResult } from "express-validator";
+import { NextFunction, Request, Response } from "express";
 
-class Middleware{
-    handleValidationError(req: Request,res: Response,next:NextFunction){
-        
-        const error = validationResult(req);
-        if(!error.isEmpty()) {
-            return res.json(error.array()[0]);
-        }
-        next();
-    }
-}
+export const handleValidationError = function (req: Request, res: Response, next: NextFunction): void | Response {
+  const error = validationResult(req);
 
-export default new Middleware();
+  if (!error.isEmpty()) {
+    return res.json(error.array()[0]);
+  }
+
+  return next();
+};
