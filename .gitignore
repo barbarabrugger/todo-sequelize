@@ -1,3 +1,6 @@
+# temporary and local dev resources
+tmp
+
 # Logs
 logs
 *.log
@@ -130,5 +133,3 @@ dist
 .pnp.*
 test-results/
 playwright-report/
-
-*.sqlite
